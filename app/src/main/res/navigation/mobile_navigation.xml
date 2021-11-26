@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_vehicles">
+
+    <fragment
+        android:id="@+id/nav_vehicles"
+        android:name="com.example.proyectomovil.ui.vehicles.VehiclesFragment"
+        android:label="@string/menu_vehicles"
+        tools:layout="@layout/fragment_vehicles" />
+
+    <fragment
+        android:id="@+id/nav_parts"
+        android:name="com.example.proyectomovil.ui.parts.PartsFragment"
+        android:label="@string/menu_parts"
+        tools:layout="@layout/fragment_parts" />
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.proyectomovil.ui.support.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
+
+    <fragment
+        android:id="@+id/nav_workshops"
+        android:name="com.example.proyectomovil.ui.support.SupportFragment"
+        android:label="@string/menu_workshops"
+        tools:layout="@layout/fragment_workshops" />
+</navigation>

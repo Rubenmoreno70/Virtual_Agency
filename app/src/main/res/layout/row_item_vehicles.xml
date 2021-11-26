@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/img_item_vehicles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/picantogt">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="50"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txt_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_name"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_line"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_item_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_model"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_item_mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_mileage"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_item_cylinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_cylinder"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_price"
+            android:textSize="20dp"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+            <Button
+                android:id="@+id/btn_item_view_more"
+                style="@style/MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="@string/btn_view_more"
+                android:layout_margin="5dp"
+                android:textSize="10dp"></Button>
+
+            <Button
+                android:id="@+id/btn_item_quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                style="@style/MyButton"
+                android:text="@string/btn_quote"
+                android:layout_margin="5dp"
+                android:textSize="10dp"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
